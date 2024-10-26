@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: #333;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.xylophone {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.key {
+    width: 60px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.1s, background-color 0.1s;
+}
+
+.key:nth-child(1) { background-color: #FF0000; } /* Красный */
+.key:nth-child(2) { background-color: #FF7F00; } /* Оранжевый */
+.key:nth-child(3) { background-color: #FFFF00; color: #333; } /* Жёлтый */
+.key:nth-child(4) { background-color: #00FF00; } /* Зелёный */
+.key:nth-child(5) { background-color: #0000FF; } /* Синий */
+.key:nth-child(6) { background-color: #4B0082; } /* Индиго */
+.key:nth-child(7) { background-color: #8B00FF; } /* Фиолетовый */
+
+.key:active {
+    transform: scale(0.95);
+    background-color: #333;
+}
